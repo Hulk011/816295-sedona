@@ -4,37 +4,52 @@
     <meta charset="utf-8">
     <title>Sedona</title>
   </head>
+
     <body>
       <header class="main-header">     
       <h1 class="vissualy-hidden">City of Sedona</h1>       
-       <nav class="header-navigation">
+      <nav class="header-navigation">
         <a class="main-logo" href="index.html">
           <img src="http://placehold.it/150x100" width="140" height="72" alt="City of Sedona">
         </a>
         <ul>
-         <li><a href="info.html">Информация</a></li>
+          <li><a href="info.html">Информация</a></li>
           <li><a href="photovideo"> Фото и видео</a></li>
           <li><a href="Map">Карта штата</a></li>
           <li class="site-navigation-current"><a href="hotels">Гостиницы</a></li>              
         </ul>
        </nav> 
       </header>
+
       <main class="search-hotels">
         <section class="filters">
           <h2 class="vissualy-hidden">Выбор гостиницы</h2>
           <!--форма-->
         </section>
 
+        <section class="results">
+          <p>найдено</p>
+          <span>3</span>
+        </section>
+
+        <section class="sorting">
+          <p>сортировка</p>
+          <a href="#" class="sorting-price">по цене</a>
+          <a href="#" class="sorting-type">по типу</a>
+          <a href="#" class="sorting-raiting">по рейтингу</a>
+          <span>↑ ↓</span>           
+        </section>
+
         <section class="catalog">
           <h2 class="vissualy-hidden">Перечень гостиниц</h2>
-          <ul class="catalog-list"></ul>
-          <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">AMARA RESORT & SPA</a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-              <img src="img/hotel-1.jpg" width="100" height="100" alt="AMARA RESORT & SPA">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3>
+                <a href="catalog-item.html">AMARA RESORT & SPA</a>
+              </h3>
+              <p class="catalog-item-image">
+                <a href="catalog-item.html">
+                <img src="img/hotel-1.jpg" width="100" height="100" alt="AMARA RESORT & SPA">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -90,12 +105,15 @@
               <li>☆</li>            
             </ul>
             <span>рейтинг 9,2</span>
-          </li>          
-        </section>
-
+          </li>     
+        </ul>     
+      </section>
       </main>
+
       <footer class="main-footer">
-        <p class="visitsedona"><a href="#">#visitsedona</a></p>
+        <p class="visitsedona">
+          <a href="#">#visitsedona</a>
+        </p>
         <div class="footer-social">
           <ul>
             <li><a class="social-button" href="#">Вконтакте</a></li>
