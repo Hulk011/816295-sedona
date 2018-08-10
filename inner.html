@@ -8,19 +8,73 @@
       <header class="main-header">     
       <h1 class="vissualy-hidden">City of Sedona</h1>       
        <nav class="header-navigation">
-        <a class="main-logo" href="/">
+        <a class="main-logo" href="index.html">
           <img src="http://placehold.it/150x100" width="140" height="72" alt="City of Sedona">
         </a>
         <ul>
-          <li>Информация</li>
-          <li>Фото и видео</li>
-          <li>Карта штата</li>
-          <li>Гостиницы</li>
+         <li><a href="info.html">Информация</a></li>
+          <li><a href="photovideo"> Фото и видео</a></li>
+          <li><a href="Map">Карта штата</a></li>
+          <li class="site-navigation-current"><a href="hotels">Гостиницы</a></li>              
         </ul>
        </nav> 
       </header>
-      <main class="search">
-        <!--я так понимаю тут форма и таблица, мы же их не проходили, их тогда не надо делать?-->
+      <main class="search-hotels">
+        <section class="filters">
+          <h2 class="vissualy-hidden">Выбор гостиницы</h2>
+          <!--форма-->
+        </section>
+
+        <section class="catalog">
+          <h2 class="vissualy-hidden">Перечень гостиниц</h2>
+          <ul class="catalog-list"></ul>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">AMARA RESORT & SPA</a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+              <img src="img/hotel-1.jpg" width="100" height="100" alt="AMARA RESORT & SPA">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>гостиница</b><b>от 4000р</b>
+              <a class="button" href="#">подробнее</a>
+              <a class="button" href="#">забронировать</a>
+            </p>  
+          </li>
+          <li>
+            <h3>
+              <a href="catalog-item.html">DESERT QUAIL INN</a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+              <img src="img/hotel-2.jpg" width="100" height="100" alt="DESERT QUAIL INN">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>мотель</b><b>от 3000р</b>
+              <a class="button" href="#">подробнее</a>
+              <a class="button" href="#">забронировать</a>
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="catalog-item.html">VILLAS AT POCO DIABLO</a>
+            </h3>
+            <p class="catalog-item-image">  
+              <a href="catalog-item.html">
+              <img src="img/hotel-3.jpg" width="100" height="100" alt="VILLAS AT POCO DIABLO">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>аппартаменты</b><b>от 2000р</b>
+              <a class="button" href="#">подробнее</a>
+              <a class="button" href="#">забронировать</a>
+            </p>
+          </li>          
+        </section>
+
       </main>
       <footer class="main-footer">
         <p class="visitsedona"><a href="#">#visitsedona</a></p>
