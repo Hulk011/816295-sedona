@@ -112,8 +112,29 @@
           <a class="button" href="https://htmlacademy.ru">html academy</a>
         </p>
   		</footer>
+      
         <section class="modal modal-booking">      
-      <!-- Здесь будет форма -->      
+          <form class="searching" method="post" action="https://echo.htmlacademy.ru">
+            <p>
+              <label for="arrival-date">Дата заезда</label>
+              <input id="arrival-date" type="text" placeholder="24 апреля 2017" name="arrival">
+              <!--в css будет картинка в свг-->
+            </p>
+            <p>
+              <label for="departure-date">Дата выезда</label>
+              <input id="departure-date" type="text" name="departure" placeholder="4 июля 2017">
+              <!--в css будет картинка в свг-->
+            </p>
+            <p>
+              <label for="adults-1">Взрослые</label>
+              <input id="adults-1" type="number" name="adults" value="2" min="0" max="10">
+            </p>
+            <p>
+              <label for="kids-1">Дети</label>
+              <input id="kids-1" type="number" name="kids" min="0" max="10">
+            </p>
+        
+          </form>      
         </section>  
   </body>
 </html>
