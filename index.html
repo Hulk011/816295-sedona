@@ -13,14 +13,23 @@
           <img src="http://placehold.it/150x100" width="140" height="72" alt="City of Sedona">
         </a>
   			<ul>
-  				<li><a href="info.html">информация</a></li>
-          <li><a href="photovideo">фото и видео</a></li>
-          <li><a href="Map">карта штата</a></li>
-          <li><a href="inner.html">гостиницы</a></li>
-  			</ul>
-        <img src="img/welcome.png" width="459" height="353" alt="Sedona">
+  				<li>
+            <a href="info.html">информация</a>
+          </li>
+          <li>
+            <a href="photovideo">фото и видео</a>
+          </li>
+          <li>
+            <a href="Map">карта штата</a>
+          </li>
+          <li>
+            <a href="inner.html">гостиницы</a>
+          </li>
+  			</ul>       
   		 </nav>	
       </header>
+
+      <div class="hero"><img src="img/intro-welcome.svg" width="459" height="353" alt="Sedona"></div>
 
   		<main>
         <section class="intro">
@@ -28,7 +37,7 @@
           <p>рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
 
-        <section class="causes-1">
+        <section class="true-city">
           <h3>настоящий городок </h3>
           <span>— №1 —</span>
           <p>седона — не аттракцион для туристов</p>
@@ -55,17 +64,17 @@
 
         <section>  
           <ul class="causes-list">                        
-            <li class="causes-item-2">
+            <li class="small">
               <h3>там есть Мост дьявола</h3>
               <span>— №2 —</span>
               <p> да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </li>
-            <li class="causes-item-3">              
+            <li class="road">              
               <h3>небольшая площадь</h3>
               <span>— №3 —</span>
               <p>все достопримечательности  находятся очень близко</p>
             </li>   
-            <li class="causes-item-4">
+            <li class="tourists">
               <h3>красивая дорога</h3>
               <span>— №4 —</span>
               <p>ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -73,7 +82,7 @@
           </ul>     
         </section> 
 
-        <section class="causes-5">           
+        <section class="diablo-bridge">           
           <h3>мало туристов</h3>
           <span> — №5 —</span>
           <p> большинство едет в гранд каньон и толпится там</p>
@@ -84,16 +93,35 @@
           <h2>заинтересовались?</h2>
           <p>укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a href="#">поиск гостиницы в седоне</a>
+          <h3 class="visually-hidden">заполните форму</h3>
+          <form class="searching" method="post" action="https://echo.htmlacademy.ru">
+            <p>
+              <label for="arrival-date">дата заезда</label>
+              <input id="arrival-date" type="text" placeholder="24 апреля 2017" name="arrival">            
+            </p>
+            <p>
+              <label for="departure-date">дата выезда</label>
+              <input id="departure-date" type="text" name="departure" placeholder="4 июля 2017">              
+            </p>
+            <p>
+              <label for="adults-1">взрослые</label>
+              <input id="adults-1" type="number" name="adults" value="2" min="0" max="10">
+            </p>
+            <p>
+              <label for="kids-1">дети</label>
+              <input id="kids-1" type="number" name="kids" min="0" max="10">
+            </p>
+            <button type="submit">найти</button>        
+          </form> 
         </section>          
     
         <section class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37043.18512502219!2d-111.8227753285547!3d34.851555340533935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1533892266991" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
       </main>
-  		<footer class="main-footer">
-        <p class="visitsedona">
-          <a href="#" aria-label="follow in instagram">#visitsedona</a>
-        </p>
+
+  		<footer class="main-footer">        
+        <a href="#" aria-label="follow in instagram">#visitsedona</a>      
         <div class="footer-social">
           <ul>
             <li>
@@ -111,31 +139,7 @@
           <b>website by</b> 
           <a class="button" href="https://htmlacademy.ru">html academy</a>
         </p>
-  		</footer>
-      
-        <section class="modal modal-booking">      
-          <form class="searching" method="post" action="https://echo.htmlacademy.ru">
-            <p>
-              <label for="arrival-date">дата заезда</label>
-              <input id="arrival-date" type="text" placeholder="24 апреля 2017" name="arrival">
-              <!--в css будет картинка в свг-->
-            </p>
-            <p>
-              <label for="departure-date">дата выезда</label>
-              <input id="departure-date" type="text" name="departure" placeholder="4 июля 2017">
-              <!--в css будет картинка в свг-->
-            </p>
-            <p>
-              <label for="adults-1">взрослые</label>
-              <input id="adults-1" type="number" name="adults" value="2" min="0" max="10">
-            </p>
-            <p>
-              <label for="kids-1">дети</label>
-              <input id="kids-1" type="number" name="kids" min="0" max="10">
-            </p>
-            <button type="submit">найти</button>        
-          </form>      
-        </section>  
+  		</footer>      
   </body>
 </html>
 
