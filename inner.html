@@ -2,30 +2,88 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Sedona</title>
+    <title>sedona</title>
   </head>
 
     <body>
       <header class="main-header">     
-      <h1 class="vissualy-hidden">City of Sedona</h1>       
+      <h1 class="vissualy-hidden">city of Sedona</h1>       
       <nav class="header-navigation">
         <a class="main-logo" href="index.html">
           <img src="http://placehold.it/150x100" width="140" height="72" alt="City of Sedona">
         </a>
         <ul>
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photovideo"> Фото и видео</a></li>
-          <li><a href="Map">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels">Гостиницы</a></li>              
+          <li>
+            <a href="info.html">информация</a>
+          </li>
+          <li>
+            <a href="photovideo"> фото и видео</a>
+          </li>
+          <li>
+            <a href="Map">карта штата</a
+              ></li>
+          <li class="site-navigation-current">
+            <a href="hotels">Гостиницы</a>
+          </li>              
         </ul>
        </nav> 
       </header>
 
       <main class="search-hotels">
         <section class="filters">
-          <h2 class="vissualy-hidden">Выбор гостиницы</h2>
+          <h2 class="vissualy-hidden">поиск гостиницы</h2>
           <img src="http://placehold.it/150x100" alt="Sedona">
-          <!--форма-->
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="field1">
+              <legend>инфраструктура</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="pool" id="infrastructure-pool" checked>
+                  <label for="infrastructure-pool">
+                    бассейн
+                  </label>
+                  <input type="checkbox" name="parcking-place" id="infrastructure-parcking-place">
+                  <label for="infrastructure-parcking-place">
+                    парковка
+                  </label>
+                  <input type="checkbox" name="wi-fi" id="infrastructure-wi-fi">
+                  <label for="infrastructure-wi-fi">
+                    wi-fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="field2">
+              <legend>тип жилья</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="hotel" id="lodging-hotel" checked>
+                  <label for="lodging-hotel">
+                    гостиница
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="lodging-motel"checked>
+                  <label for="lodging-motel">
+                    мотель
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="lodging-apartments" checked>
+                  <label for="lodging-apartments">
+                    аппартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>    
+            <fieldset class="field3">
+              <legend>стоимость в сутки(р):</legend>
+              <p class="range-price">от 0 до 3000</p>
+              <label>
+                <input type="range" name="choise-range" min="0" max="3000" step="500">
+              </label>
+            </fieldset>        
+          </form>
         </section>
 
         <section class="results">
@@ -42,7 +100,7 @@
         </section>
 
         <section class="catalog">
-          <h2 class="vissualy-hidden">Перечень гостиниц</h2>
+          <h2 class="vissualy-hidden">перечень гостиниц</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <h3>
@@ -117,9 +175,9 @@
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">вконтакте</a></li>
+            <li><a class="social-button" href="#">фейсбук</a></li>
+            <li><a class="social-button" href="#">инстаграм</a></li>
           </ul>
         </div>
           <p class="footer-copyright">
