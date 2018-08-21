@@ -9,10 +9,13 @@ body {
   color: #ffffff;
   text-transform: uppercase;
 
-  background-color: #000000;
+  background-color: #ffffff;
   background-image: url();
   background-position: top center;
   background-repeat: no-repeat;
+}
+ul {
+	list-style: none;
 }
 
 a {
@@ -30,14 +33,13 @@ a {
 	background-color: #ffffff;
 }
 
-.intro,
- {
+.intro {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	color: #000000;
 
-	background-color: #ffffff;
+	background-color: #ffffff
 }
 
 .intro p {
@@ -45,7 +47,7 @@ a {
 	line-height: 26px;	
 	color: #333333;
 
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 .true-sity h3,
@@ -55,7 +57,7 @@ a {
 	font-weight: bold;
 	color: #ffffff;
 
-	background-color: #000000;
+	background-color: #81b3d2;
 }
 
 .true-city,
@@ -64,7 +66,7 @@ a {
 	line-height: 21px;	
 	color: #ffffff;
 
-	background-color: #000000;	
+	background-color: #81b3d2;	
 }
 
 .number span {
@@ -72,7 +74,7 @@ a {
 	line-height: 21px;
 	color: #ffffff;
 
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 .feauters {
@@ -81,7 +83,7 @@ a {
 	font-weight: bold;
 	color: #000000;
 
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 .feauters p {
@@ -89,7 +91,7 @@ a {
 	line-height: 21px;	
 	color: #333333;
 
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 .causes {
@@ -97,7 +99,7 @@ a {
 	line-height: 21px;	
 	color: #333333;
 
-	background-color: #000000;
+	background-color: #eeeeee;
 }
 
 .causes h3 {
@@ -106,7 +108,7 @@ a {
 	font-weight: bold;
 	color: #000000;
 
-	background-color: #000000;
+	background-color: #eeeeee;
 }
 
 .interest p {
@@ -141,7 +143,7 @@ a {
 	font-weight: bold;
 	color: #ffffff;
 
-	background-color: #81b3d2;
+	background-color: #81b3d2;	
 }
 
 .map {
@@ -155,4 +157,34 @@ a {
 	color: #000000;
 
 	background-color: #ffffff;
+}
+
+.searching-button::hover {
+	background-color: #604e43;
+}
+.searching-button::active {
+	background-color: rgba(80, 62, 51);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.interest input {
+	background-color: #f2f2f2;
+}
+
+.interest input::hover {
+	background-color: #ebebeb;
+}
+
+.interest input::focus {
+	background-color: #ffffff;
+	border: 2px solid #eeeeee;
+}
+
+.search::hover {
+	background-color: #669ec0;
+}
+
+.search::active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: rgb(84, 150, 189);
 }

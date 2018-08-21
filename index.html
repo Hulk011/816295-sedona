@@ -5,7 +5,7 @@
     <title>sedona</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Regular:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    
+    <link href="css/style.css" rel="stylesheet">   
   </head>
 
   	<body>
@@ -42,9 +42,10 @@
 
         <section class="true-city">
           <h3>настоящий городок </h3>
-          <span class="number">— №1 —</span>
+          <span>— №1 —</span>
           <p>седона — не аттракцион для туристов</p>
           <img src="img/back2.jpg" width="800" height="256" alt="Restourant">
+        
         </section>  
 
         <section class="feauters">
@@ -65,37 +66,37 @@
           </ul>
         </section>
 
-        <section>  
-          <ul class="causes-list">                        
-            <li class="small">
-              <h3>там есть Мост дьявола</h3>
-              <span class="number">— №2 —</span>
-              <p> да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </li>
-            <li class="road">              
+        <section class="causes">  
+          <ul class="causes-list">                    
+            <li class="small">              
               <h3>небольшая площадь</h3>
-              <span class="number">— №3 —</span>
+              <span>— №3 —</span>
               <p>все достопримечательности  находятся очень близко</p>
             </li>   
-            <li class="tourists">
+            <li class="road">
               <h3>красивая дорога</h3>
-              <span class="number">— №4 —</span>
+              <span>— №4 —</span>
               <p>ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="tourists">
+              <h3>мало туристов</h3>
+              <span>— №5 —</span>
+              <p> большинство едет в гранд каньон и толпится там</p>
+            </li>
               </li>
           </ul>     
         </section> 
 
-        <section class="diablo-bridge">           
-          <h3>мало туристов</h3>
-          <span class="number"> — №5 —</span>
-          <p> большинство едет в гранд каньон и толпится там</p>
-          <img src="img/back3.jpg" width="800" height="256" alt="Bridge">                          
+        <section class="diablo-bridge">
+          <h3>там есть Мост дьявола</h3>         
+          <span>— №2 —</span>
+          <p> да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <img src="img/back3.jpg" width="800" height="256" alt="Bridge">        
         </section>        
 
         <section class="interest">
           <h2>заинтересовались?</h2>
           <p>укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a href="#">поиск гостиницы в седоне</a>
+          <a href="#" class="searching-button" type="button">поиск гостиницы в седоне</a>
           <h3 class="visually-hidden">заполните форму</h3>
           <form class="searching" method="post" action="https://echo.htmlacademy.ru">
             <p>
@@ -114,7 +115,7 @@
               <label for="kids-1">дети</label>
               <input id="kids-1" type="number" name="kids" min="0" max="10">
             </p>
-            <button type="submit">найти</button>        
+            <button type="submit" class="search" width="100" height="100">найти</button>        
           </form> 
         </section>          
     
