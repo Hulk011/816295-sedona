@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+ 	padding: 0;
+
+  font-family: "PT Sans Regular", Arial, sans-serif;
+ 	font-size: 14px;
+ 	line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  background-image: url();
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header,
+.interest,
+.main-footer b {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.intro,
+ {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.intro p {
+	font-size: 14px;
+	line-height: 26px;	
+	color: #333333;
+
+	background-color: #000000;
+}
+
+.true-sity h3,
+.diablo-bridge h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.true-city,
+.diablo-bridge  {
+  font-size: 14px;
+	line-height: 21px;	
+	color: #ffffff;
+
+	background-color: #000000;	
+}
+
+.number span {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.feauters {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #000000;
+
+	background-color: #000000;
+}
+
+.feauters p {
+	font-size: 14px;
+	line-height: 21px;	
+	color: #333333;
+
+	background-color: #000000;
+}
+
+.causes {
+	font-size: 14px;
+	line-height: 21px;	
+	color: #333333;
+
+	background-color: #000000;
+}
+
+.causes h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #000000;
+
+	background-color: #000000;
+}
+
+.interest p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+
+	background-color: #ffffff;
+}
+
+.interest h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.interest a {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #756257;
+}
+
+.interest button {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.map {
+	background-image: url(img/map.png);
+}
+
+.main-footer {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+
+	background-color: #ffffff;
+}
