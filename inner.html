@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Regular:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
     <body>
@@ -14,16 +17,17 @@
         </a>
         <ul>
           <li>
-            <a href="info.html">информация</a>
+            <a class="info" href="info.html">информация</a>
           </li>
           <li>
             <a href="photovideo">фото и видео</a>
           </li>
           <li>
             <a href="Map">карта штата</a
-              ></li>
-          <li class="site-navigation-current">
-            <a href="hotels">Гостиницы</a>
+              >
+          </li>
+          <li>
+            <a class="site-navigation-current" href="hotels">Гостиницы</a>
           </li>              
         </ul>
        </nav> 
@@ -66,7 +70,7 @@
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="motel" id="lodging-motel"checked>
+                  <input type="checkbox" name="motel" id="lodging-motel" checked>
                   <label for="lodging-motel">
                     мотель
                   </label>
@@ -85,21 +89,20 @@
               <label>
                 <input type="range" name="choise-range" min="0" max="3000" step="500">
               </label>
-              <button type="submit">показать</button>
+              <button class="show" type="submit">показать</button>
             </fieldset>        
           </form>
         </section>
 
         <section class="results">
-          <p>найдено</p>
-          <span>3</span>
+          <p>найдено: 3</p>          
         </section>
 
         <section class="sorting">
           <p>сортировка</p>
-          <button class="sorting-price">по цене</button> 
-          <button class="sorting-type">по типу</button>
-          <button class="sorting-raiting">по рейтингу</button>
+          <a href="#" class="sorting-price">по цене</a> 
+          <a href="#" class="sorting-type">по типу</a>
+          <a href="#" class="sorting-raiting">по рейтингу</a>
           <a href="#">↑</a>
           <a href="#">↓</a>            
         </section>
@@ -118,8 +121,8 @@
             </p>
             <p class="catalog-item-price">
               <b>гостиница от 4000р</b>
-              <a class="button" href="#">подробнее</a>
-              <a class="button" href="#">забронировать</a>
+              <a class="button-details" href="#">подробнее</a>
+              <a class="button-bookin" href="#">забронировать</a>
             </p>  
             <ul class="stars">
               <li>☆</li>
@@ -140,8 +143,8 @@
             </p>
             <p class="catalog-item-price">
               <b>мотель от 3000р</b>
-              <a class="button" href="#">подробнее</a>
-              <a class="button" href="#">забронировать</a>
+              <a class="button-details" href="#">подробнее</a>
+              <a class="button-bookin" href="#">забронировать</a>
             </p>
             <ul class="stars">
               <li>☆</li>
@@ -161,8 +164,8 @@
             </p>
             <p class="catalog-item-price">
               <b>аппартаменты от 2000р</b>
-              <a class="button" href="#">подробнее</a>
-              <a class="button" href="#">забронировать</a>
+              <a class="button-details" href="#">подробнее</a>
+              <a class="button-bookin" href="#">забронировать</a>
             </p>
             <ul class="stars">
               <li>☆</li>

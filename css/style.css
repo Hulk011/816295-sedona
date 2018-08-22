@@ -2,7 +2,7 @@ body {
   margin: 0;
  	padding: 0;
 
-  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
  	font-size: 14px;
  	line-height: 21px;
   font-weight: 400;
@@ -10,16 +10,27 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url();
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-ul {
+ }
+
+.main-header ul,
+.feauters ul,
+.causes ul,
+.search-hotels ul,
+.catalog ul,
+.main-footer ul {
 	list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.main-header a {
+	color: #000000;
+}
+
+li .site-navigation-current {	
+	color: #837268; 
 }
 
 .main-header,
@@ -33,7 +44,20 @@ a {
 	background-color: #ffffff;
 }
 
-.intro {
+.filter {
+	background-color: #f8f5f2;
+	background-image: url("../img/main-back-inner.jpg");  
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.search-hotels legend {
+	font-size: 16px;
+	line-height: 21px;	
+	color: #ffffff;
+}
+
+.intro h2 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -50,6 +74,15 @@ a {
 	background-color: #ffffff;
 }
 
+ .header-navigation .info:hover {
+	color: #81b3d2;
+}
+ .header-navigation .info:active {
+	color: #dddddd;
+}
+ .header-navigation .info:visited {
+	color: #86766b;
+}
 .true-sity h3,
 .diablo-bridge h3 {
 	font-size: 21px;
@@ -69,15 +102,31 @@ a {
 	background-color: #81b3d2;	
 }
 
-.number span {
+.number span,
+.show {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
 
+	margin: 3px; 
+	padding-top: 11px; 
+	padding-bottom: 11px;
+	padding-right: 35px;
+	padding-left: 33px;
+}
+.show {
+	border: 1px solid white; 	
+	background-color: transparent;
+}
+
+.show:active {
+  color: #000000;
+
+	border: 1px solid white; 	
 	background-color: #ffffff;
 }
 
-.feauters {
+.feauters h3 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
@@ -128,26 +177,8 @@ a {
 	background-color: #ffffff;
 }
 
-.interest a {
-	font-size: 21px;
-	line-height: 21px;
-	font-weight: bold;
-	color: #ffffff;
-
-	background-color: #756257;
-}
-
-.interest button {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #ffffff;
-
-	background-color: #81b3d2;	
-}
-
 .map {
-	background-image: url(img/map.png);
+	background-image: url("img/map.png");
 }
 
 .main-footer {
@@ -159,10 +190,20 @@ a {
 	background-color: #ffffff;
 }
 
-.searching-button::hover {
+.searching-button {
+	font-size: 21px; 
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #766357;
+}
+
+.searching-button:hover {
 	background-color: #604e43;
 }
-.searching-button::active {
+
+.searching-button:active {
 	background-color: rgba(80, 62, 51);
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -171,20 +212,122 @@ a {
 	background-color: #f2f2f2;
 }
 
-.interest input::hover {
+.interest input:hover {
 	background-color: #ebebeb;
 }
 
-.interest input::focus {
+.interest input:focus {
 	background-color: #ffffff;
 	border: 2px solid #eeeeee;
 }
+.search {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
 
-.search::hover {
+	background-color: #81b3d2;
+}
+
+.search:hover {
 	background-color: #669ec0;
 }
 
-.search::active {
+.search:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: rgb(84, 150, 189);
+}
+
+.catalog .button-details {
+  font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+.catalog .button-details:hover {
+background-color: #669ec0;
+}
+.catalog .button-details:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: rgb(84, 150, 189);
+}
+
+.catalog .button-bookin  {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #766357;
+}
+.catalog .button-bookin:hover {
+	background-color: #604e43;
+}
+.catalog .button-bookin:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.catalog b {
+	font-size: 14px;
+	line-height: 21px;
+	color: #bebebe;
+}
+
+.catalog a,
+.results {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.catalog span {
+ font-size: 14px;
+ line-height: 21px;
+ color: #666666;
+
+ background-color: #f2f2f2;
+}
+
+.catalog li {
+	color: #8dbad6;
+}
+
+.sorting p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.sorting-price {
+	font-size: 12px;
+	line-height: 18px;
+	color: #81b3d2;
+}
+
+.sorting-type,
+.sorting-raiting {
+	font-size: 12px;
+	line-height: 18px;
+	color: #e6e6e6;
+
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-raiting:hover {
+	color: #81b3d2;
+}
+.sorting-raiting:active {
+	color: #000000;
+
+	border: none;
+}
+.catalog h3 a:hover {
+	color: #81b3d2;
+}
+.catalog h3 a:active {
+	color: #d8d8d8;
 }
