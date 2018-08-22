@@ -1,16 +1,16 @@
 body {
-  margin: 0;
- 	padding: 0;
+	margin: 0;
+	padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
  	font-size: 14px;
  	line-height: 21px;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
 
-  background-color: #ffffff;
- }
+	background-color: #ffffff;
+}
 
 .main-header ul,
 .feauters ul,
@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .main-header a {
@@ -47,8 +47,8 @@ li .site-navigation-current {
 .filter {
 	background-color: #f8f5f2;
 	background-image: url("../img/main-back-inner.jpg");  
-  background-position: left center;
-  background-repeat: no-repeat;
+	background-position: left center;
+	background-repeat: no-repeat;
 }
 
 .search-hotels legend {
@@ -94,8 +94,8 @@ li .site-navigation-current {
 }
 
 .true-city,
-.diablo-bridge  {
-  font-size: 14px;
+.diablo-bridge  {	
+ 	font-size: 14px;
 	line-height: 21px;	
 	color: #ffffff;
 
@@ -106,7 +106,15 @@ li .site-navigation-current {
 .show {
 	font-size: 14px;
 	line-height: 21px;
-	color: #ffffff;
+	color: #ffffff;	
+}
+
+.show {
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 21px;
+	border: 1px solid white; 	
+	background-color: transparent;
 
 	margin: 3px; 
 	padding-top: 11px; 
@@ -114,13 +122,9 @@ li .site-navigation-current {
 	padding-right: 35px;
 	padding-left: 33px;
 }
-.show {
-	border: 1px solid white; 	
-	background-color: transparent;
-}
 
 .show:active {
-  color: #000000;
+	color: #000000;
 
 	border: 1px solid white; 	
 	background-color: #ffffff;
@@ -239,7 +243,7 @@ li .site-navigation-current {
 }
 
 .catalog .button-details {
-  font-size: 14px;
+	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
@@ -247,7 +251,7 @@ li .site-navigation-current {
 	background-color: #81b3d2;
 }
 .catalog .button-details:hover {
-background-color: #669ec0;
+	background-color: #669ec0;
 }
 .catalog .button-details:active {
 	color: rgba(255, 255, 255, 0.3);
@@ -285,11 +289,11 @@ background-color: #669ec0;
 }
 
 .catalog span {
- font-size: 14px;
- line-height: 21px;
- color: #666666;
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
 
- background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
 
 .catalog li {
