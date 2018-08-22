@@ -34,7 +34,7 @@ li .site-navigation-current {
 }
 
 .main-header,
-.interest,
+.interest .searching,
 .main-footer b {
 	font-size: 14px;
 	line-height: 26px;
@@ -57,7 +57,8 @@ li .site-navigation-current {
 	color: #ffffff;
 }
 
-.intro h2 {
+.intro h2,
+.main-footer {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -74,9 +75,6 @@ li .site-navigation-current {
 	background-color: #ffffff;
 }
 
- .header-navigation .info:hover {
-	color: #81b3d2;
-}
  .header-navigation .info:active {
 	color: #dddddd;
 }
@@ -102,8 +100,7 @@ li .site-navigation-current {
 	background-color: #81b3d2;	
 }
 
-.number span,
-.show {
+.number span {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;	
@@ -113,7 +110,9 @@ li .site-navigation-current {
 	font-family: inherit;
 	font-size: 14px;
 	line-height: 21px;
-	border: 1px solid white; 	
+	text-transform: uppercase;
+	color: #ffffff;
+
 	background-color: transparent;
 
 	margin: 3px; 
@@ -121,6 +120,8 @@ li .site-navigation-current {
 	padding-bottom: 11px;
 	padding-right: 35px;
 	padding-left: 33px;
+	border: 1px solid white; 	
+	
 }
 
 .show:active {
@@ -168,6 +169,9 @@ li .site-navigation-current {
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
+	font-weight: inherit;
+
+
 
 	background-color: #ffffff;
 }
@@ -182,16 +186,10 @@ li .site-navigation-current {
 }
 
 .map {
-	background-image: url("img/map.png");
-}
+	width: 600px; 
+	height: 450px; 	 
 
-.main-footer {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #000000;
-
-	background-color: #ffffff;
+	background-image: url("../img/map.png");
 }
 
 .searching-button {
@@ -199,12 +197,9 @@ li .site-navigation-current {
 	line-height: 26px;
 	font-weight: bold;
 	color: #ffffff;
+	text-transform: uppercase;
 
 	background-color: #766357;
-}
-
-.searching-button:hover {
-	background-color: #604e43;
 }
 
 .searching-button:active {
@@ -229,7 +224,8 @@ li .site-navigation-current {
 	line-height: 26px;
 	font-weight: bold;
 	color: #ffffff;
-
+	text-transform: uppercase;
+	
 	background-color: #81b3d2;
 }
 
@@ -247,6 +243,7 @@ li .site-navigation-current {
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
+	text-transform: uppercase;
 
 	background-color: #81b3d2;
 }
@@ -258,15 +255,17 @@ li .site-navigation-current {
 	background-color: rgb(84, 150, 189);
 }
 
-.catalog .button-bookin  {
+.catalog .button-bookin {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
+	text-transform: uppercase;
 
 	background-color: #766357;
 }
-.catalog .button-bookin:hover {
+.catalog .button-bookin:hover,
+.searching-button:hover {
 	background-color: #604e43;
 }
 .catalog .button-bookin:active {
@@ -321,7 +320,9 @@ li .site-navigation-current {
 	border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-raiting:hover {
+.sorting-raiting:hover,
+.catalog h3 a:hover,
+.header-navigation .info:hover {
 	color: #81b3d2;
 }
 .sorting-raiting:active {
@@ -329,9 +330,28 @@ li .site-navigation-current {
 
 	border: none;
 }
-.catalog h3 a:hover {
-	color: #81b3d2;
-}
+
 .catalog h3 a:active {
 	color: #d8d8d8;
+}
+
+.hero {
+	background-color: #ffffff;
+	background-image: url("../img/Main-backg.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/*SVG*/
+.sedona-logo {
+	width: 140px;
+	height: 72px;
+}
+
+.htmllogo {
+	width: 115px;
+	height:41px;
+}
+.htmllogo:hover {
+	fill: #81b3d2;
 }
