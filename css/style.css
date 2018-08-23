@@ -29,8 +29,26 @@ a {
 	color: #000000;
 }
 
-li .site-navigation-current {	
-	color: #837268; 
+.catalog h3 a:hover,
+.header-navigation .info:hover,
+.header-navigation .photo:hover,
+.header-navigation .map-state:hover,
+.header-navigation .navigation-hotels:hover {
+	color: #81b3d2;
+}
+
+.header-navigation .info:active,
+.header-navigation .photo:active,
+.header-navigation .map-state:active,
+.header-navigation .navigation-hotels:active {
+	color: #dadada;
+}
+
+.header-navigation .info:visited,
+.header-navigation .photo:visited,
+.header-navigation .map-state:visited,
+.header-navigation .navigation-hotels-current:visited {
+	color: #86766b;
 }
 
 .main-header,
@@ -75,12 +93,6 @@ li .site-navigation-current {
 	background-color: #ffffff;
 }
 
- .header-navigation .info:active {
-	color: #dddddd;
-}
- .header-navigation .info:visited {
-	color: #86766b;
-}
 .true-sity h3,
 .diablo-bridge h3 {
 	font-size: 21px;
@@ -116,8 +128,8 @@ li .site-navigation-current {
 	background-color: transparent;
 
 	margin: 3px; 
-	padding-top: 11px; 
-	padding-bottom: 11px;
+	padding-top: 13px; 
+	padding-bottom: 13px;
 	padding-right: 35px;
 	padding-left: 33px;
 	border: 1px solid white; 	
@@ -225,8 +237,15 @@ li .site-navigation-current {
 	font-weight: bold;
 	color: #ffffff;
 	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
 	
 	background-color: #81b3d2;
+
+	padding-right: 196px;
+	padding-left: 196px;
+	padding-top: 17px;
+	padding-bottom: 22px;
 }
 
 .search:hover {
@@ -305,31 +324,39 @@ li .site-navigation-current {
 	color: #000000;
 }
 
-.sorting-price {
-	font-size: 12px;
-	line-height: 18px;
-	color: #81b3d2;
-}
-
+.sorting-price,
 .sorting-type,
 .sorting-raiting {
 	font-size: 12px;
 	line-height: 18px;
-	color: #e6e6e6;
+	color: #ebebeb;
+
+	border-bottom: 1px dashed #81b3d2;
+}
+.sorting-price:hover,
+.sorting-type:hover,
+.sorting-raiting:hover {
+	color: #81b3d2;
 
 	border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-raiting:hover,
-.catalog h3 a:hover,
-.header-navigation .info:hover {
-	color: #81b3d2;
-}
+.sorting-price:active,
+.sorting-type:active,
 .sorting-raiting:active {
 	color: #000000;
 
 	border: none;
 }
+
+.sorting-price:focus,
+.sorting-type:focus,
+.sorting-raiting:focus {
+	color: #81b3d2;
+
+	border: none;
+}
+
 
 .catalog h3 a:active {
 	color: #d8d8d8;
