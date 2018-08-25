@@ -12,6 +12,9 @@ body {
 	background-color: #ffffff;
 }
 
+h1 {
+	color: #000000;
+}
 .main-header ul,
 .feauters ul,
 .causes ul,
@@ -25,7 +28,7 @@ a {
 	text-decoration: none;
 }
 
-.main-header a {
+.main-header a {	
 	color: #000000;
 }
 
@@ -47,8 +50,28 @@ a {
 .header-navigation .info:visited,
 .header-navigation .photo:visited,
 .header-navigation .map-state:visited,
-.header-navigation .navigation-hotels-current:visited {
+ {
 	color: #86766b;
+}
+.header-navigation .navigation-hotels-current {
+	color: #86766b;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 40px;
+	margin: 0 auto; 
+	text-align: center;
+}
+
+.site-navigation {
+	display: flex;  
+  align-items: center;
+  justify-content: space-between;
+
+	
+	width: 1055px;
+	padding: 0px 72px;
 }
 
 .main-header,
@@ -60,6 +83,19 @@ a {
 	color: #000000;
 
 	background-color: #ffffff;
+}
+
+.content {
+	display:;
+	flex-direction: column;
+	align-items: center;
+}
+.feauters-list {
+	margin-top: 160px;
+	margin-bottom: 85px;
+
+	display: flex;
+	justify-content: space-around;
 }
 
 .filter {
@@ -84,6 +120,9 @@ a {
 
 	background-color: #ffffff
 }
+.intro {
+	margin-top: 150px;
+}
 
 .intro p {
 	font-size: 14px;
@@ -93,7 +132,16 @@ a {
 	background-color: #ffffff;
 }
 
-.true-sity h3,
+.true-city {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-top: 55px;
+	padding-left: 55px;
+}
+
+.true-city h3,
 .diablo-bridge h3 {
 	font-size: 21px;
 	line-height: 21px;
@@ -101,6 +149,15 @@ a {
 	color: #ffffff;
 
 	background-color: #81b3d2;
+}
+.swap {
+	display: flex;
+	flex-direction: column;
+}
+.diablo-bridge {
+	display: flex;
+	flex-direction: row-reverse;
+	order: -1;
 }
 
 .true-city,
@@ -110,6 +167,26 @@ a {
 	color: #ffffff;
 
 	background-color: #81b3d2;	
+}
+
+.restourant {	
+	width: 800px;
+	height: 256px;
+
+	background-color: #ffffff;
+	background-image: url("../img/back2.jpg");	
+	background-repeat: no-repeat;	
+	background-position: right center;
+}
+
+.bridge {	
+	width: 800px;
+	height: 256px;
+
+	background-color: #ffffff;
+	background-image: url("../img/back3.jpg");	
+	background-repeat: no-repeat;	
+	background-position: right center;
 }
 
 .number span {
@@ -129,8 +206,7 @@ a {
 
 	margin: 3px; 
 	padding-top: 13px; 
-	padding-bottom: 13px;
-	padding-right: 35px;
+	padding-bottom: 13px	padding-right: 35px;
 	padding-left: 33px;
 	border: 1px solid white; 	
 	
@@ -167,6 +243,21 @@ a {
 
 	background-color: #eeeeee;
 }
+.causes-list {
+	display: flex;	
+	justify-content: space-around;
+	align-items: center;
+
+  margin: auto;
+
+  min-height: 255px;
+  }
+/*
+.small,
+.road,
+.tourists {
+	width: 240px;	
+}*/
 
 .causes h3 {
 	font-size: 21px;
@@ -197,11 +288,13 @@ a {
 	background-color: #ffffff;
 }
 
-.map {
-	width: 600px; 
+.map {	 
 	height: 450px; 	 
 
+	background-color: #ffffff;
 	background-image: url("../img/map.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .searching-button {
@@ -362,11 +455,18 @@ a {
 	color: #d8d8d8;
 }
 
-.hero {
+.hero {	
+	height: 510px;	
+
 	background-color: #ffffff;
 	background-image: url("../img/Main-backg.jpg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center top;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
 }
 
 /*SVG*/
@@ -381,4 +481,11 @@ a {
 }
 .htmllogo:hover {
 	fill: #81b3d2;
+}
+
+.welcome {
+	margin-top: 75px; 	
+
+	width: 459px;
+	height: 353px;
 }
