@@ -28,6 +28,27 @@ a {
 	text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header a {	
 	color: #000000;
 }
@@ -59,17 +80,29 @@ a {
 
 .container {
 	width: 1200px;
-	padding: 0 40px;
-	margin: 0 auto; 
+	
+	margin: auto; 
 	text-align: center;
+}
+
+.photo {
+	margin-right: 240px;
+}
+.map-state {
+	margin-right: 15px;
 }
 
 .site-navigation {
 	display: flex;  
-  align-items: center;
-  justify-content: space-between;	
-	
-	padding: 0px 72px;
+	flex-wrap: wrap;  
+	justify-content: space-around;
+
+	padding-left: 0;
+}
+.site-navigation a {
+	display: block;
+	padding-bottom: 2px;
+
 }
 
 .main-header,
@@ -121,10 +154,15 @@ a {
 	background-color: #ffffff
 }
 .intro {
-	margin-top: 150px;
+	margin-top: 60px;
 }
 
 .intro p {
+	display: inline-block;
+
+	margin-top: 10px;
+
+	letter-spacing: 0.1px;
 	font-size: 14px;
 	line-height: 26px;	
 	color: #333333;
@@ -137,8 +175,22 @@ a {
 	flex-direction: row;
 	justify-content: space-between;
 
-	margin-top: 55px;
-	padding-left: 55px;
+	margin-top: 41px;
+	
+}
+
+.true-city-text {
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 215px;
+  align-items: center;
+  padding-left: 92px;
+  margin-top: 26px;
+}
+.true-city-text p {
+	width: 280px;
+  margin-top: 23px;
 }
 
 .true-city h3,
@@ -503,12 +555,12 @@ a {
 }
 
 .hero {	
-	height: 510px;	
+	height: 508px;	
 
 	background-color: #ffffff;
 	background-image: url("../img/Main-backg.jpg");
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: -1px -42px;
 }
 
 .main-footer {
@@ -518,6 +570,10 @@ a {
 
 /*SVG*/
 .sedona-logo {
+	position: absolute;
+	top: 0;
+  left: 795px;
+
 	width: 140px;
 	height: 72px;
 }
@@ -531,8 +587,15 @@ a {
 }
 
 .welcome {
-	margin-top: 75px; 	
+	margin-top: 76px; 	
 
 	width: 459px;
 	height: 353px;
 }
+ .thing {	
+ 	position: absolute;
+	
+	height: 57px;
+	top: 507px;
+	left: 265px;
+}	
