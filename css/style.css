@@ -52,6 +52,9 @@ img {
 .main-header a {	
 	color: #000000;
 }
+.main-header {
+	position: relative;
+}
 
 .catalog h3 a:hover,
 .header-navigation .info:hover,
@@ -116,17 +119,21 @@ img {
 	background-color: #ffffff;
 }
 
-.content {
-	display:;
-	flex-direction: column;
-	align-items: center;
-}
+
+
 .feauters-list {
-	margin-top: 160px;
-	margin-bottom: 85px;
+	position: relative;
+
+	padding-left: 0;
+	margin-top: 139px;
+	margin-bottom: 73px;
 
 	display: flex;
 	justify-content: space-around;
+}
+
+.feauters-item {
+	width: 300px;
 }
 
 .filter {	
@@ -175,8 +182,7 @@ img {
 	flex-direction: row;
 	justify-content: space-between;
 
-	margin-top: 41px;
-	
+	margin-top: 37px;	
 }
 
 .true-city-text {
@@ -188,9 +194,10 @@ img {
   padding-left: 92px;
   margin-top: 26px;
 }
+
 .true-city-text p {
 	width: 280px;
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .true-city h3,
@@ -199,6 +206,8 @@ img {
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
+
+	margin-top: 17px;
 
 	background-color: #81b3d2;
 }
@@ -277,7 +286,51 @@ img {
 	font-weight: bold;
 	color: #000000;
 
+	padding-bottom: 5px;
+
 	background-color: #ffffff;
+}
+
+.house:before {
+	content: "";
+
+	position: absolute;
+  bottom: 129px;
+	left: 161px;
+  width: 76px;
+  height: 74px;
+
+	background-image: url("../img/icon-1.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.eat:before {
+	content: "";
+
+	position: absolute;
+	bottom: 132px;
+  left: 563px;
+  width: 75px;
+  height: 70px;	
+    
+	background-image: url("../img/icon-3.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.suvenir:before {
+	content: "";
+
+	position: absolute;
+	right: 156px;
+  bottom: 131px;
+  width: 75px;
+  height: 76px;
+
+	background-image: url("../img/icon-2.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .feauters p {
@@ -304,12 +357,6 @@ img {
 
   min-height: 255px;
   }
-/*
-.small,
-.road,
-.tourists {
-	width: 240px;	
-}*/
 
 .causes h3 {
 	font-size: 21px;
@@ -325,8 +372,6 @@ img {
 	line-height: 24px;
 	color: #333333;
 	font-weight: inherit;
-
-
 
 	background-color: #ffffff;
 }
@@ -571,8 +616,8 @@ img {
 /*SVG*/
 .sedona-logo {
 	position: absolute;
-	top: 0;
-  left: 795px;
+	top: -15px;
+  left: 530px;
 
 	width: 140px;
 	height: 72px;
@@ -597,5 +642,5 @@ img {
 	
 	height: 57px;
 	top: 507px;
-	left: 265px;
+	left: 352px;
 }	
