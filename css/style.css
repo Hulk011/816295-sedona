@@ -101,6 +101,10 @@ img {
 	justify-content: space-around;
 
 	padding-left: 0;
+	margin: 0;
+	padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: 2px;
 }
 .site-navigation a {
 	display: block;
@@ -118,8 +122,6 @@ img {
 
 	background-color: #ffffff;
 }
-
-
 
 .feauters-list {
 	position: relative;
@@ -291,7 +293,8 @@ img {
 
 	margin: 3px; 
 	padding-top: 13px; 
-	padding-bottom: 13px	padding-right: 35px;
+	padding-bottom: 13px;
+	padding-right: 35px;
 	padding-left: 33px;
 	border: 1px solid white; 	
 	
@@ -377,9 +380,10 @@ img {
 	justify-content: space-around;
 	align-items: center;
 
-  margin: auto;
-
-  min-height: 255px;
+	margin: 0;
+  margin-top: 25px;  
+  padding: 0;
+  margin-bottom: 24px;
   }
 
 .causes h3 {
@@ -388,9 +392,25 @@ img {
 	font-weight: bold;
 	color: #000000;
 
+	width: 125px;
+	margin-left: 65px;
+	margin-bottom: 25px;
+
 	background-color: #eeeeee;
 }
 
+.causes-list li {
+	width: 261px;
+	margin-bottom: 20px;
+}
+
+.causes-list p {
+	padding-top: 7px;
+}
+
+.causes-list li:last-child {
+	width: 259px;
+}
 .interest p {
 	font-size: 14px;
 	line-height: 24px;
@@ -640,7 +660,7 @@ img {
 /*SVG*/
 .sedona-logo {
 	position: absolute;
-	top: -15px;
+	top: 0px;
   left: 530px;
 
 	width: 140px;
