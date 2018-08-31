@@ -121,18 +121,21 @@
 
         <section class="interest">
           <h2>заинтересовались?</h2>
-          <p>укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p>укажите предполагаемые даты поездки,<br>  и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="searching-button">поиск гостиницы в седоне</button> 
           <h1 class="visually-hidden">заполните форму</h1>
           <form class="searching" method="post" action="https://echo.htmlacademy.ru">
-            <p>
+            <div class="date-month">
+             <p>
               <label for="arrival-date">дата заезда</label>
               <input id="arrival-date" type="text" placeholder="24 апреля 2017" name="arrival">            
-            </p>
-            <p>
+              </p>
+             <p>
               <label for="departure-date">дата выезда</label>
-              <input id="departure-date" type="text" name="departure" placeholder="4 июля 2017">              
-            </p>
+              <input id="departure-date" type="text" name="departure" placeholder="4 июля 2017">                         
+             </p>
+            </div>    
+          <div class="people">  
             <p>
               <label for="adults-1">взрослые</label>
               <input id="adults-1" type="number" name="adults" value="2" min="0" max="10">
@@ -141,6 +144,7 @@
               <label for="kids-1">дети</label>
               <input id="kids-1" type="number" name="kids" min="0" max="10">
             </p>
+          </div>  
             <button type="submit" class="search">найти</button>        
           </form> 
         </section>          
