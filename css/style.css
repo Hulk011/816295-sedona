@@ -52,8 +52,10 @@ img {
 .main-header a {	
 	color: #000000;
 }
-.main-header {
+
+.header-navigation {
 	position: relative;
+  z-index: 1;
 }
 
 .catalog h3 a:hover,
@@ -73,8 +75,7 @@ img {
 
 .header-navigation .info:visited,
 .header-navigation .photo:visited,
-.header-navigation .map-state:visited,
- {
+.header-navigation .map-state:visited {
 	color: #86766b;
 }
 .header-navigation .navigation-hotels-current {
@@ -86,6 +87,8 @@ img {
 	
 	margin: auto; 
 	text-align: center;
+
+	box-shadow: 0px 9px 39px 5px #000;
 }
 
 .photo {
@@ -194,7 +197,7 @@ img {
   width: 215px;
   align-items: center;
   padding-left: 92px;
-  margin-top: 26px;
+  margin-top: 31px;
 }
 
 .true-city-text p {
@@ -433,24 +436,55 @@ img {
 
 .searching p {
 	margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
+}
+
+.interest {
+	position: relative;
 }
 
 .searching {
-	padding: 55px 0;
-	width: 50%;
-  margin-left: 300px;
+	position: absolute;
+
+	box-sizing: border-box;
+
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+
+
+	padding-top: 55px;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-bottom: 50px; 
 }
+
 .interest label {
     padding-right: 21px;
 }
 .map {	 
-	height: 450px; 	 
+	position: relative;
+
+	width: 1200px;
+	height: 470px; 	 
 
 	background-color: #ffffff;
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.google-map {
+	position: absolute;
+
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 100%;
+	height: 100%;
+
+	border: none;
 }
 
 .searching-button {
@@ -463,30 +497,82 @@ img {
 	background-color: #766357;
 
 	padding: 30px 140px;
-	margin-top: 30px;	
-  margin-bottom: -3px;
+	margin-top: 30px;	  
+  border: none;
 }
 
-.searching input[type="text"] {
-  width: 344px;  
+.arrival-date,
+.departure-date {
+  width: 332px;  
   height: 35px;
+
+  padding-left: 10px;
 
   border: none;
 }
 
 .people {
-	display: flex;
-  justify-content: space-around;
-  padding-right: 75px;
-  padding-bottom: 24px;
+ 	display: flex;
+  justify-content: flex-end;
+}
+
+.people-arrival,
+.people-arrival1 {
+	font-size: 0;
+}
+
+.plus,
+.minus,
+.adults-number,
+.kids-number {
+	width: 38px;
+  height: 38px;
+
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
+  color: #a9a9a9;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.plus,
+.minus {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plus:active,
+.minus:active,
+.adults-number:hover,
+.kids-number:hover {
+	background: white;
+  border: 1px solid #f2f2f2
+}
+
+label.adults1 {
+  padding-right: 40px;
+}
+.people-arrival {
+  padding-right: 54px;
+  margin-top: -5px;
+}
+
+label.kids1 {
+  padding-right: 26px;
+}
+
+.people-arrival1 {
+	margin-top: -5px;
 }
 
 .searching-button:active {
 	background-color: rgba(80, 62, 51);
 	color: rgba(255, 255, 255, 0.3);
 }
-
-
 
 .interest input {
 	background-color: #f2f2f2;
@@ -511,11 +597,13 @@ img {
 	vertical-align: middle;
 	
 	background-color: #81b3d2;
+	border: none;
 
-	padding-right: 196px;
+	margin-top: 29px;
+	padding-right: 198px;
 	padding-left: 193px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 16px;
+	padding-bottom: 17px;
 }
 
 .search:hover {
@@ -680,6 +768,8 @@ img {
 }
 
 .hero {	
+	position: relative;
+
 	height: 508px;	
 
 	background-color: #ffffff;
@@ -693,6 +783,49 @@ img {
 	justify-content: space-between;
 }
 
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+.social-button {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+
+  margin: 36px 0;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  margin-right: 101px;
+  margin-top: 12px;
+}
+
+.footer-copyright b {
+	padding-right: 7px;
+	margin-bottom: 9px;
+}
+
+.visitsedona {
+	margin: 0;
+  padding-left: 133px;
+  padding-top: 50px;
+}
 /*SVG*/
 .sedona-logo {
 	position: absolute;
@@ -717,10 +850,17 @@ img {
 	width: 459px;
 	height: 353px;
 }
- .thing {	
- 	position: absolute;
-	
-	height: 57px;
-	top: 507px;
-	left: 352px;
+ .hero:before {
+ 	content: "";
+
+  position: absolute;
+
+  width: 1200px;
+  height: 70px;
+  top: 451px;
+  left: 0px;
+
+  background-image: url(../img/intro-mask.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }	
