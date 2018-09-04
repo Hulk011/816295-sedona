@@ -144,16 +144,104 @@ img {
 .filter {	
 	display: flex;
 
+	min-height: 215px
 	background-color: #f8f5f2;
 	background-image: url("../img/main-back-inner.jpg");  
-	background-position: left center;
+	background-position: center -292px;
 	background-repeat: no-repeat;
+	background-size: 1200px 800px;
 }
 
+.labelcheck { 
+  cursor: pointer;
+}
+
+.labelcheck input[type="checkbox"] + .checkbox-pool,
+.labelcheck input[type="checkbox"] + .checkbox-hotel {
+  position: absolute;
+  top: 72px;
+  left: -1px;
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid #ffffff;
+}
+
+.labelcheck input[type="checkbox"] + .checkbox-wifi,
+.labelcheck input[type="checkbox"] + .checkbox-apartaments {
+  position: absolute;
+  top: 163px;
+  left: -1px;
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid #ffffff;
+}
+
+.labelcheck input[type="checkbox"] + .checkbox-motel,
+.labelcheck input[type="checkbox"] + .checkbox-parcking {
+  position: absolute;
+  top: 118px;
+  left: -1px;
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid #ffffff;
+}
+
+.labelcheck input[type="checkbox"] + .checkbox-pool:before,
+.labelcheck input[type="checkbox"] + .checkbox-hotel:before,
+.labelcheck input[type="checkbox"] + .checkbox-motel:before,
+.labelcheck input[type="checkbox"] + .checkbox-apartaments:before {
+	content: "";
+
+  position: absolute;
+  transform: rotate(45deg);
+  left: 13px;
+  top: -2px;
+  height: 20px;
+  width: 5px;
+
+  background-color: #fff;
+}
+.labelcheck input[type="checkbox"] + .checkbox-pool:after,
+.labelcheck input[type="checkbox"] + .checkbox-hotel:after,
+.labelcheck input[type="checkbox"] + .checkbox-motel:after,
+.labelcheck input[type="checkbox"] + .checkbox-apartaments:after {
+ 	content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 12px;
+  transform: rotate(-45deg);
+
+  background-color: #fff;
+}
+
+.filter input[type="text"] {
+	font: inherit;
+	color: #ffffff;
+	text-transform: uppercase;
+}
 .search-hotels legend {
 	font-size: 16px;
 	line-height: 21px;	
 	color: #ffffff;
+
+	padding-top: 27px;	
+}
+
+.type-lodging {
+  padding-right: 88px;
+ }
+
+.type-infrastructure {
+	padding-right: 44px;
 }
 
 .intro h2,
@@ -456,7 +544,7 @@ img {
 	padding-top: 55px;
 	padding-left: 55px;
 	padding-right: 55px;
-	padding-bottom: 50px; 
+	padding-bottom: 55px; 
 }
 
 .interest label {
@@ -615,14 +703,23 @@ label.kids1 {
 	background-color: rgb(84, 150, 189);
 }
 
-.field-infrastructure,
-.field-lodging {
-	display: flex;
-  flex-direction: row;
+.field-infrastructure {
+	position: relative;	
  
-  width: 310px;
-
+  width: 175px;
   border: none;
+
+  margin-left: 72px;
+  padding: 0;
+}
+.field-lodging {
+	position: relative;	
+ 
+  width: 175px;
+  border: none;
+
+  margin-left: 79px;
+  padding: 0;
 }
 
 .infrastructure-list li,
@@ -630,7 +727,9 @@ label.kids1 {
 	display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 15px;
+  
+  padding-top: 9px;
+  min-height: 38px;
 }
 
 .field-range {
@@ -643,6 +742,104 @@ label.kids1 {
   border: none;  
 }
 
+.catalog-list {
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-item1 {
+	position: relative;
+	padding-left: 72px;
+  padding-top: 15px;
+}
+
+.catalog-decoration {
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 13px;
+}
+
+.catalog-item1 .catalog-name {
+  margin-top: 9px;
+  margin-left: 18px;
+}
+
+.catalog-item1 .buttons-details {
+  margin-left: 17px;
+  margin-top: 13px;
+}
+
+.catalog-item1 .text-catalog {
+  margin-top: -9px;
+  display: block;
+  margin-left: 17px;
+}
+
+.catalog-item2 {
+	position: relative;
+
+	margin-top: 10px;
+	padding-top: 14px;
+  padding-left: 72px;
+}
+.catalog-item1 b {
+  padding-right: 36px;
+}
+
+.catalog-item2 .catalog-name,
+.catalog-item3 .catalog-name {
+  padding-left: 17px;
+  margin-top: 9px;
+}
+
+.catalog-item2 .text-catalog {
+  margin-left: 17px;
+  margin-top: -8px;
+}
+
+.catalog-item2 b {
+	padding-right: 60px;
+}
+
+.catalog-item3 b {
+	padding: 0;
+	padding-right: 17px;
+}
+
+.catalog-item3 {
+	position: relative;
+
+	margin-top: 10px;
+	padding-top: 14px;
+  padding-left: 72px;
+	margin-bottom: 5px;
+	padding-bottom: 9px;
+	margin-bottom: -5px;
+}
+
+.catalog-item3 .text-catalog {
+  padding-left: 17px;
+  margin-top: -9px;
+}
+
+.solo-raiting {
+	position: absolute;
+	right: 72px;
+  bottom: 21px;
+}
+
+.solo-raiting3 {
+	position: absolute;
+	right: 72px;
+  bottom: 28px;
+}
+
+
+.catalog-item2 .buttons-details,
+.catalog-item3 .buttons-details {
+ 	margin-top: 13px;
+  margin-left: 17px;
+}
 
 .catalog .button-details {
 	font-size: 14px;
@@ -651,15 +848,21 @@ label.kids1 {
 	color: #ffffff;
 	text-transform: uppercase;
 
+	display: inline-block;
+  padding: 3px 17px;
+  margin-right: 3px;
+
 	background-color: #81b3d2;
 }
 .catalog .button-details:hover {
 	background-color: #669ec0;
 }
+
 .catalog .button-details:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: rgb(84, 150, 189);
 }
+
 
 .catalog .button-bookin {
 	font-size: 14px;
@@ -667,6 +870,9 @@ label.kids1 {
 	font-weight: bold;
 	color: #ffffff;
 	text-transform: uppercase;
+
+	display: inline-block;
+  padding: 3px 16px;
 
 	background-color: #766357;
 }
@@ -682,7 +888,8 @@ label.kids1 {
 .catalog b {
 	font-size: 14px;
 	line-height: 21px;
-	color: #bebebe;
+	color: #adadad;
+	font-family: inherit;
 }
 
 .catalog a,
@@ -699,23 +906,45 @@ label.kids1 {
 	color: #666666;
 
 	background-color: #f2f2f2;
+
+	padding: 3px 13px;
 }
 
 .catalog li {
 	display: flex;
-  flex-direction: row;
 
-  width: 100px;
-  
-  padding-left: 150px;
+	border-top: 3px solid #f6f6f6;
 
-	color: #8dbad6;
+	color: #a2a2a2;
 }
+.catalog-decoration {
+	box-sizing: border-box;
+  text-align: left;
+  padding-left: 13px;
+}
+
+.sort.sorting-raiting {
+  margin-left: 35px;
+  padding-top: 9px;
+}
+
+.sort.sorting-type {
+  margin-left: 32px;
+  padding-top: 10px;
+}
+
+.sorting-price.sort {
+  margin-left: 42px;
+  padding-top: 10px;
+ }
 
 .sorting-results {
 	display: flex;
-  padding-left: 75px;
+  padding-left: 72px;
+  margin-top: 7px;
+  padding-bottom: 10px;
 }
+
 .sorting {
 	display: flex;
   align-items: center;
@@ -727,6 +956,9 @@ label.kids1 {
 	font-size: 12px;
 	line-height: 18px;
 	color: #000000;
+
+	margin-top: 23px;
+  padding-left: 3px
 }
 
 .sorting-price,
@@ -734,7 +966,7 @@ label.kids1 {
 .sorting-raiting {
 	font-size: 12px;
 	line-height: 18px;
-	color: #ebebeb;
+	color: #d8d8d8;
 
 	border-bottom: 1px dashed #81b3d2;
 }
@@ -864,3 +1096,22 @@ label.kids1 {
   background-position: 0 0;
   background-repeat: no-repeat;
 }	
+
+.stars1,
+.stars2 {
+	position: absolute;
+	right: 72px;
+  bottom: 89px;
+}
+
+.stars3 {
+	position: absolute;
+	right: 72px;
+  bottom: 95px;
+}
+
+.stars {
+	width: 17px;
+	height: 18px;
+	margin-left: 4px;
+}
