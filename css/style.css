@@ -90,9 +90,9 @@ img {
 	margin: auto; 
 	text-align: center;
 
-	-webkit-box-shadow: 0px 9px 39px 5px #000;
+	-webkit-box-shadow: 0px 0px 20px 2px #e3e3e3, 0px 0px 0px 40px #f2f2f2;
+	        box-shadow: 0px 0px 20px 2px #e3e3e3, 0px 0px 0px 40px #f2f2f2;
 
-	        box-shadow: 0px 9px 39px 5px #000;
 }
 
 .photo {
@@ -121,6 +121,13 @@ img {
 	display: block;
 	padding-bottom: 2px;
 
+}
+
+.main-logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .main-header,
@@ -316,8 +323,7 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -364,8 +370,7 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -833,7 +838,10 @@ label.kids1 {
 }
 
 .field-range {	
-  	margin-left: 200px;
+	color: #ffffff;
+  	text-transform: uppercase;
+
+  	margin-left: 296px;
 
   	border: none;  
 }
@@ -920,13 +928,13 @@ label.kids1 {
 }
 
 .solo-raiting {
-	position: absolute;
+	
 	right: 72px;
   	bottom: 21px;
 }
 
 .solo-raiting3 {
-	position: absolute;
+	
 	right: 72px;
   	bottom: 28px;
 }
@@ -1112,7 +1120,7 @@ label.kids1 {
 	height: 508px;	
 
 	background-color: #ffffff;
-	background-image: url("../img/Main-backg.jpg");
+	background-image: url("../img/main-backg.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 -42px;
 }
@@ -1138,7 +1146,8 @@ label.kids1 {
   	width: 150px;
   	margin: 0 auto;
   	padding: 0;
-  	padding-left: 30px;
+  	padding-left: 15px;
+  	padding-right: 15px;
   	padding-top: 5px;
 }
 .social-button {
@@ -1198,10 +1207,6 @@ label.kids1 {
 }
 /*SVG*/
 .sedona-logo {
-	position: absolute;
-	top: 0px;
-  	left: 530px;
-
 	width: 140px;
 	height: 72px;
 }
@@ -1292,7 +1297,7 @@ label.kids1 {
 
   	width: 1200px;
   	height: 70px;
-  	top: 451px;
+  	bottom: -13px;
   	left: 0px;
 
   	background-image: url(../img/intro-mask.svg);
@@ -1307,8 +1312,12 @@ label.kids1 {
   	bottom: 89px;
 }
 
+.lol {
+	margin-left: auto;
+	margin-right: 30px;
+}
 .stars3 {
-	position: absolute;
+	
 	right: 72px;
   	bottom: 95px;
 }
@@ -1322,14 +1331,9 @@ label.kids1 {
 /* range */
 
 .field-range {
-	position: absolute;
-	top: 0px;
-  	left: 599px;
-
-  	width: 320px;
+	
  
-  	color: #ffffff;
-  	text-transform: uppercase;
+  	
 }
 
 .field-range-title {
@@ -1449,7 +1453,7 @@ label.kids1 {
   	display: block;
   	margin-left: 85px;
   	margin-top: -2px;
-  	padding: 6px 35px;
+  	padding: 6px 34px;
 
   	font-size: 14px;
   	line-height: 20px;
