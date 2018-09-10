@@ -3,8 +3,8 @@ body {
 	padding: 0;
 
 	font-family: "PT Sans", Arial, sans-serif;
- 	font-size: 14px;
- 	line-height: 21px;
+	font-size: 14px;
+	line-height: 21px;
 	font-weight: 400;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -30,8 +30,8 @@ a {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -106,7 +106,7 @@ img {
 	width: 238px;
 	text-align: left;
 }
-   
+
 .item-map-state {
 	width: 238px;
 	margin-left: 92px;	
@@ -146,8 +146,8 @@ img {
 	top: 0;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .main-header,
@@ -260,7 +260,7 @@ img {
 
 	background-color: #fff;
 	-webkit-box-shadow: 0 0 0 1.5px #5d87af;
-	        box-shadow: 0 0 0 1.5px #5d87af;
+	box-shadow: 0 0 0 1.5px #5d87af;
 }
 
 .labelcheck input[type="checkbox"]:checked + .checkbox-hotel::after,
@@ -269,14 +269,15 @@ img {
 .labelcheck input[type="checkbox"]:checked + .checkbox-parcking::after,
 .labelcheck input[type="checkbox"]:checked + .checkbox-apartaments::after,
 .labelcheck input[type="checkbox"]:checked + .checkbox-wifi::after {
- 	content: "";
+	content: "";
 
 	position: absolute;
 	top: 5px;
 	left: 5px;
 	width: 4px;
 	height: 9px;
-  -webkit-transform: rotate(-45deg);	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);	
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 
 	background-color: #fff;
@@ -357,15 +358,15 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
 
 	width: 215px;
 
-  -webkit-box-align: center;
+	-webkit-box-align: center;
 	-ms-flex-align: center;
 
 	align-items: center;
@@ -394,13 +395,13 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+	
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	width: 151px;
-  -webkit-box-align: center;
+	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
 	padding-right: 124px;
@@ -409,7 +410,7 @@ img {
 
 .diablo-bridge-text p {
 	width: 315px;
- 	padding-top: 10px;
+	padding-top: 10px;
 }
 
 .swap {
@@ -446,7 +447,7 @@ img {
 
 .true-city,
 .diablo-bridge  {	
- 	font-size: 14px;
+	font-size: 14px;
 	line-height: 21px;	
 	color: #ffffff;
 
@@ -455,12 +456,12 @@ img {
 
 .true-city img {		
 	position: absolute;
-  display: block;
-  top: 122px;
-  right: 0;  
-  width: 800px;
-  min-height: 400px;
-  -webkit-transform: translateY(-50%);
+	display: block;
+	top: 122px;
+	right: 0;	
+	width: 800px;
+	min-height: 400px;
+	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
@@ -559,10 +560,10 @@ img {
 	align-items: center;
 
 	margin: 0;
-	margin-top: 25px;  
+	margin-top: 25px;	
 	padding: 0;
 	margin-bottom: 24px;
-  }
+	}
 
 .causes h3 {
 	font-size: 21px;
@@ -652,7 +653,7 @@ img {
 	padding-right: 21px;
 }
 
-.map {	 
+.map {
 	position: relative;
 
 	width: 1200px;
@@ -689,7 +690,7 @@ img {
 	background-color: #766357;
 
 	padding: 30px 140px;
-	margin-top: 30px;	  
+	margin-top: 30px;		
 	border: none;	
 }
 
@@ -697,7 +698,7 @@ img {
 .departure-date {
 
 	position: relative;
-	width: 302px;  
+	width: 302px;	
 	height: 35px;
 
 	padding-left: 10px;
@@ -708,10 +709,10 @@ img {
 }
 
 .people {
- 	display: -webkit-box;
- 	display: -ms-flexbox;
- 	display: flex;
-  -webkit-box-pack: end;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
 }
@@ -731,7 +732,7 @@ img {
 	font-weight: bold;
 	line-height: 21px;
 	font-size: 14px;
-  -webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 0;
 	background-color: #f2f2f2;
@@ -781,7 +782,7 @@ input::placeholder {
 
 .plus:hover,
 .minus:hover {
- 	color: #000000;
+	color: #000000;
 }
 
 .plus:active,
@@ -823,7 +824,7 @@ label.kids1 {
 
 .arrival-date:focus,
 .departure-date:focus {
-	width: 298px;  
+	width: 298px;	
 	height: 31px;
 
 	background-color: #ffffff;
@@ -875,7 +876,7 @@ label.kids1 {
 
 .field-infrastructure {
 	position: relative;	
- 
+
 	width: 175px;
 	border: none;
 
@@ -885,7 +886,7 @@ label.kids1 {
 
 .field-lodging {
 	position: relative;	
- 
+
 	width: 175px;
 	border: none;
 
@@ -898,14 +899,14 @@ label.kids1 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
-  -webkit-box-pack: start;
+	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-  
+	
 	padding-top: 9px;
 	min-height: 38px;
 }
@@ -916,7 +917,7 @@ label.kids1 {
 
 	margin-left: 296px;
 
-	border: none;  
+	border: none;	
 }
 
 .catalog-list {
@@ -930,7 +931,7 @@ label.kids1 {
 }
 
 .catalog-decoration {
-  -webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: left;
 	padding-left: 13px;
@@ -1006,7 +1007,7 @@ label.kids1 {
 
 .catalog-item-desert .buttons-details,
 .catalog-item-poco .buttons-details {
- 	margin-top: 13px;
+	margin-top: 13px;
 	margin-left: 17px;
 }
 
@@ -1119,7 +1120,7 @@ label.kids1 {
 .sorting-price.sort {
 	margin-left: 42px;
 	padding-top: 10px;
- }
+}
 
 .sorting-results {
 	position: relative;
@@ -1137,7 +1138,7 @@ label.kids1 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  -webkit-box-align: center;
+	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
 	padding-left: 45px;
@@ -1187,7 +1188,6 @@ label.kids1 {
 	border: none;
 }
 
-
 .catalog-name a:active {
 	color: #d8d8d8;
 }
@@ -1208,8 +1208,8 @@ label.kids1 {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -1235,10 +1235,10 @@ label.kids1 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  -webkit-box-align: center;
+	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-  -webkit-box-pack: center;
+	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 
@@ -1262,10 +1262,10 @@ label.kids1 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  -webkit-box-pack: center;
+	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-  -webkit-box-align: center;
+	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
 
@@ -1371,19 +1371,19 @@ label.kids1 {
 }
 
 .welcome {
-	margin-top: 76px; 	
+	margin-top: 76px;	
 
 	width: 459px;
 	height: 353px;
 }
- .hero:before {
- 	content: "";
+.hero:before {
+	content: "";
 
 	position: absolute;
 
 	width: 1200px;
 	height: 70px;
-	top: 451px;
+	bottom: -13px;
 	left: 0px;
 
 	background-image: url(../img/intro-mask.svg);
@@ -1407,7 +1407,6 @@ label.kids1 {
 	margin-right: 64px;
 }
 
-
 .stars {
 	width: 17px;
 	height: 18px;
@@ -1427,7 +1426,7 @@ label.kids1 {
 
 .price-controls {
 	position: relative;
-  
+	
 	height: 34px;
 	margin-bottom: 20px;
 
@@ -1447,7 +1446,7 @@ label.kids1 {
 	height: 22px;
 
 	background: #ffffff;
-  -webkit-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
@@ -1509,7 +1508,7 @@ label.kids1 {
 	background: #ababab;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
 }
